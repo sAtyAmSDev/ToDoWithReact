@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#root {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.Main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  gap: 1rem;
+}
+.Main h1 {
+  padding: 0;
+  margin: 0;
+}
+.Main .InputBox {
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  background-color: #01394c;
+  color: white;
+}
+.Main input {
+  outline: none;
+  border-radius: 10px 0 0px 10px;
+  border: none;
+  padding: 6px;
+  font-size: 20px;
+  background-color: #01394c;
+  color: white;
+}
+.Main button {
+  width: max-content;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 17px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #002837;
+  color: white;
+}
+
+.Main button:hover {
+  background-color: #001f29;
+  outline: none;
+  border: none;
+}
+.ToDoText {
+  gap: 1rem;
+  /* margin: 1rem; */
+  color: white;
+  background-color: #01394c;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.ToDoText .Icon {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+.Icon button {
+  cursor: pointer;
+  display: flex;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  /* max-width: 22px; */
+  justify-content: center;
+  align-items: center;
+}
+.ToDoTextSpan {
+  color: gray;
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 400px) {
+  .Main h1 {
+    font-size: 2.2em;
+  }
+  .Main button {
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .Main .InputBox {
+    background-color: transparent;
+  }
+  form {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Main input {
+    border-radius: 7px;
+  }
+  .Icon button {
+    font-size: 14px;
+  }
+  .ToDoText {
+    padding: 7px;
+    border-radius: 10px;
+  }
+}
